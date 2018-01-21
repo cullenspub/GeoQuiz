@@ -23,12 +23,7 @@ public class QuizActivity extends AppCompatActivity {
         setContentView(R.layout.activity_quiz);
 
         mTrueButton = (Button) findViewById(R.id.true_button);
-        mTrueButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                displayResponse(R.string.correct_toast,R.drawable.ic_happy);
-            }
-        });
+        mTrueButton.setOnClickListener(view -> displayResponse(R.string.correct_toast,R.drawable.ic_happy));
 
         mFalseButton = (Button) findViewById(R.id.false_button);
         mFalseButton.setOnClickListener(new View.OnClickListener() {
